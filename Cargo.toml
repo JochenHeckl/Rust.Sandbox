@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "guessing-game",
+    "HelloWorld",
+    "variables"
+]
+resolver = "2"
