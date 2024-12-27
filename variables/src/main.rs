@@ -9,11 +9,11 @@ fn main() {
     const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
     println!("3 hours in seconds is {THREE_HOURS_IN_SECONDS}s.");
 
-    variableShadowing();
+    variable_shadowing();
 }
 
 
-fn variableShadowing()
+fn variable_shadowing()
 {
     let x = 5;
 
