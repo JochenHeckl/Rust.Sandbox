@@ -3,6 +3,7 @@ members = [
     "guessing-game",
     "HelloWorld",
     "slices",
+    "structs",
     "variables",
 ]
 resolver = "2"
