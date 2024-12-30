@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        crate: [guessing-game, HelloWorld, variables]
+        crate: [HelloWorld, guessing-game, slices, variables]
 
     steps:
     - name: Checkout code
@@ -52,5 +52,3 @@ jobs:
 
     - name: Run Clippy
       run: cargo clippy -- -D warnings
-
-

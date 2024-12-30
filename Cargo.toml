@@ -2,6 +2,7 @@
 members = [
     "guessing-game",
     "HelloWorld",
-    "variables"
+    "slices",
+    "variables",
 ]
 resolver = "2"
