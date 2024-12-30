@@ -1,7 +1,11 @@
 [workspace]
 members = [
+    "enums",
     "guessing-game",
     "HelloWorld",
-    "variables"
+    "restaurant",
+    "slices",
+    "structs",
+    "variables",
 ]
 resolver = "2"

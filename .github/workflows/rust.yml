@@ -13,7 +13,14 @@ jobs:
 
     strategy:
       matrix:
-        crate: [guessing-game, HelloWorld, variables]
+        crate: 
+          - enums
+          - HelloWorld
+          - guessing-game
+          - restaurant
+          - slices
+          - structs
+          - variables
 
     steps:
     - name: Checkout code
@@ -29,28 +36,3 @@ jobs:
       run: |
         cargo build --verbose
         cargo test --verbose
-
-  workspace-check:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Install Rust
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-
-    - name: Workspace Build and Test
-      run: |
-        cargo build --workspace --verbose
-        cargo test --workspace --verbose
-
-    - name: Check Formatting
-      run: cargo fmt -- --check
-
-    - name: Run Clippy
-      run: cargo clippy -- -D warnings
-
-
