@@ -3,6 +3,7 @@ members = [
     "enums",
     "guessing-game",
     "HelloWorld",
+    "restaurant",
     "slices",
     "structs",
     "variables",
