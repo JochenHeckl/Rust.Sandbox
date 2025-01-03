@@ -6,6 +6,6 @@ members = [
     "restaurant",
     "slices",
     "structs",
-    "variables",
+    "variables", "collections",
 ]
 resolver = "2"
